@@ -15,16 +15,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    // Add resolve fallbacks for better module resolution
-    config.resolve.fallback = {
-      ...config.resolve.fallback,
-      fs: false,
-      net: false,
-      tls: false,
-    }
-    
-    // Add explicit alias resolution
+  webpack: (config) => {
+    // Add explicit alias resolution for better module resolution
     config.resolve.alias = {
       ...config.resolve.alias,
       '@': path.resolve(__dirname, '.'),
