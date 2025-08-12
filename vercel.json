@@ -1,7 +1,7 @@
 {
-  "buildCommand": "cd jetgoFront && npm install && npm run build",
+  "buildCommand": "npm run build",
   "outputDirectory": "jetgoFront/.next",
   "framework": "nextjs",
-  "installCommand": "cd jetgoFront && npm install",
-  "devCommand": "cd jetgoFront && npm run dev"
+  "installCommand": "npm install",
+  "devCommand": "npm run dev"
 } 
