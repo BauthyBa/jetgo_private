@@ -24,3 +24,4 @@ NEXT_PUBLIC_FRONTEND_URL=https://tu-dominio.vercel.app
 ```
 
 **Fecha de creación:** $(date) 
+**Última actualización:** $(date) - Forzando nuevo deploy con fix de dependencias 
